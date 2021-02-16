@@ -27,6 +27,10 @@ dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
 }
 
+bootJar {
+    mainClassName = 'com.checkers.application.Application'
+}
+
 tasks.named('test') {
     // Use junit platform for unit tests.
     useJUnitPlatform()
